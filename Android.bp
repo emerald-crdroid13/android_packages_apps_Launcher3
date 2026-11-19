@@ -563,7 +563,9 @@ android_app {
     optimize: {
         proguard_flags_files: [":launcher-proguard-rules"],
         enabled: true,
-        shrink_resources: true,
+        // Resource shrinking dropped drawables referenced from SystemShortcut /
+        // LauncherAppWidgetHostView and crashed the long-press popup.
+        shrink_resources: false,
         ignore_warnings: false,
     },
 
