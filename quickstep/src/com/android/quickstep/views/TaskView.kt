@@ -1987,6 +1987,7 @@ constructor(
         recentsScale = 1f
         setRecentsTranslation(0f)
         setRecentsDim(0f)
+        rotationY = 0f
         translationZ = 0f
         setIconVisibleForGesture(true)
         settledProgressDismiss = 1f
